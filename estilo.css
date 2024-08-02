@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+.row{
+    --bs-gutter-x: 0rem;
+}
+
 /*--Nav--*/
 .links-nav a{
     text-transform: uppercase;
@@ -13,4 +17,14 @@
 
 .links-nav a:hover{
     color: green;
+}
+/*---------*/
+
+/*--Aviso--*/
+.btn-customizado-aviso{
+    border: 1px solid black;
+    border-radius: 70px;
+    padding: 4px 10px 4px 10px;
+    background: transparent;
+    font-weight: 600;
 }
