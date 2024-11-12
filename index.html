@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+
+    <!--Bootstrap-CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Estilo-customizado-->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <!--Icone-->
+    <link rel="icon" href="imagens/logo.png" type="ico-x-icon">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</head>
+<body class="testes" onresize="janela()">
+    
+    <!--Concertar a visualização pelo cell-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a href="index.html" class="navbar-brand" style="margin-left: 40px;"><img src="imagens/logo.png" width="50px"></a>
+
+    <!--menu responsivo inicio-->
+    <div class="mobile-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!--------------------->
+
+    <ul class="navbar-nav links-nav"> 
+        <li class="nav-item"><a href="#" class="nav-link">menu</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">nosso café</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">impacto social</a></li>
+    </ul>
+
+    <ul class="navbar-nav" style="margin-left: auto; margin-right: 40px;">
+        <li class="nav-item"><a href="#" class="nav-link"><img src="imagens/historias.png" width="130px"></a></li>
+        <li class="nav-item pt-3"><a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+            Encontre nossa loja
+        </a></li>
+    </ul>
+  
+</nav>
+
+
+<header>
+<picture>
+    <source srcset="imagens/banner_1657816974_mobile.jpg" media="(max-width: 768px)" class="img-fluid" />
+    <img src="imagens/banner_1657816974_desktop.jpg" alt="starbucks" class="img-fluid">
+</picture>
+</header>
+
+
+<section style="background-color: rgb(212, 233, 226);" class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <div style="width: 65%;">
+                        <p class="pt-4 pb-3" style="text-align: center;">“Comunicado encerramento do Programa Starbucks Rewards, Starbucks Card e aplicativo Starbucks Brasil.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btnb btn-customizado-aviso mb-4">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--INÍCIO--ÁREA--DIV-->
+<section style="background-color: rgb(212, 233, 226);" class="mt-4">
+        <div class="row parametro">
+            
+            <div class="col-sm area-textos">
+                <div class="text-center mt-5 mb-5">
+                    <h4>Uma surpresa refrescante para você</h4>
+                    <p class="m-4">Conheça nossa linha de <strong>Cold Brew e Refreshers™</strong></p>
+                    <button type="button" class="btnb btn-customizado-aviso mb-4">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <img src="imagens/copos.png" class="img-fluid">
+            </div>
+        </div>
+</section>
+
+
+<section style="background-color: rgb(212, 233, 226);" class="mt-4">
+        <div class="row">
+            <div class="col-sm">
+                <img src="imagens/Terra.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-sm area-textos">
+                <div class="text-center mt-5 mb-5">
+                    <h4>Coisas boas estão acontecendo</h4>
+                    <p class="m-4">Acreditamos que podemos e devemos gerar um impacto positivo nas comunidades em que atuamos.</p>
+                    <button type="button" class="btnb btn-customizado-aviso mb-4">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<section style="background-color: rgb(212, 233, 226);" class="mt-4 mb-4">
+        <div class="row parametro">
+            <div class="col-sm area-textos">
+                <div class="text-center mt-5 mb-5">
+                    <h4>Histórias e Notícias Starbucks</h4>
+                    <p class="m-4">Fique por dentro das novidades e conheça mais sobre nossas iniciativas.</p>
+                    <button type="button" class="btnb btn-customizado-aviso mb-4">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <img src="imagens/Pessoas.jpg" class="img-fluid">
+            </div>
+        </div>
+</section>
+
+<!--FIM--ÁREA--DIV-->
+
+
+<div id="linha" class="mb-5"></div>
+
+<footer class="container">
+    <div class="row">
+        <div class="col">
+            <span>Sobre nós</span>
+
+            <ul class="mt-4">
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+            </ul>
+        </div>
+    
+        <div class="col">
+            <span>Carreira</span>
+
+            <ul class="mt-4">
+                <li><a href="#">Nossa empresa</a></li>
+            </ul>
+        </div>
+    
+        <div class="col">
+            <span>Impacto social</span>
+
+            <ul class="mt-4">
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+            </ul>
+        </div>
+    
+        <div class="col">
+            <span>Starbucks rewards</span>
+
+            <ul class="mt-4">
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+                <li><a href="#">Nossa empresa</a></li>
+            </ul>
+        </div>
+    
+        <div class="col">
+            <a href="#"><img src="imagens/historias.png" class="img-fluid" width="130px"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="mobile-navbar.js"></script>
+
+<!--Bootstrap-JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
