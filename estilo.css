@@ -121,3 +121,37 @@ li{
     height: 1px;
 }
 /*---------*/
+
+/*--Rodapé--*/
+.btnr a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: rgba(51, 67, 61, 0.8);
+    margin: 10px 0px 10px 0px;
+}
+
+.btnr a:hover{
+    color: black;    
+}
+
+.rdp2 a{
+    padding: 7px;
+}
+
+.rdpl2 a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px 5px 10px;
+    border-right: 1px solid black;
+}
+
+.rdpl2 a:hover {
+    color: rgb(51, 67, 61);
+}
+
+#copy{
+    font-size: 0.9em;
+    color: rgba(51, 67, 61, 0.7);
+}
+
+/*---------*/
