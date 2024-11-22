@@ -1,5 +1,4 @@
 const sla = $(document).ready(() => {
-        console.log('rodou')
     
         let tamanho = innerWidth
     
@@ -10,10 +9,28 @@ const sla = $(document).ready(() => {
         if(tamanho <= 575){
             $('section').find('.parametro').addClass('flex-column-reverse')
     }
+
+        /*--Rodapé--pt1*/
+        if(tamanho => 576){
+            $('.rdp1').find('.row, div').addClass('col')
+        }
+        
+        if(tamanho <= 575){
+            $('.rdp1').find('.row, div').removeClass('col')
+        }
+
+        /*--Rodapé--*/
+        if(tamanho => 576){
+            $('.btnr').show()
+        }
+        
+        if(tamanho <= 575){
+            $('.btnr').hide()
+    } 
+
 })
 
 function janela() {  //preciso melhorar isso, pq ta uma gambiarra do krl 
-    console.log('rodou')
     
     let tamanho = innerWidth
 
@@ -23,5 +40,29 @@ function janela() {  //preciso melhorar isso, pq ta uma gambiarra do krl
 
     if(tamanho <= 575){
         $('section').find('.parametro').addClass('flex-column-reverse')
+    }
+
+    /*--Rodapé--pt1*/
+    if(tamanho => 576){
+        $('.rdp1').find('.row, div').addClass('col')
+    }
+    
+    if(tamanho <= 575){
+        $('.rdp1').find('.row, div').removeClass('col')
+    }
+
+    
+    /*--Rodapé--*/
+    if(tamanho => 576){
+        $('.btnr').show()
+    }
+    
+    if(tamanho <= 575){
+        $('.btnr').hide()
+    } 
+
 }
+
+function btn_rodape(){
+    $('.btnr').toggle('medio')
 }
