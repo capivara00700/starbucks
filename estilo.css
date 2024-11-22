@@ -141,6 +141,7 @@ li{
 @media(max-width: 575px) {
     #btn-1, #btn-2, #btn-3, #btn-4{
         display: block;
+        rotate: 180deg;
     }
 
     .rdp1 .rdp-m{
