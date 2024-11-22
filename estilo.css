@@ -134,6 +134,10 @@ li{
     color: black;    
 }
 
+
+
+/*--Rodapé--2*/
+
 .rdp2 a{
     padding: 7px;
 }
@@ -149,9 +153,16 @@ li{
     color: rgb(51, 67, 61);
 }
 
+@media(max-width: 999px) {
+    .rdpl2 a {
+        display: block;
+        border: none;
+        padding: 0px 0px 20px 0px;
+    }  
+}
+
 #copy{
     font-size: 0.9em;
     color: rgba(51, 67, 61, 0.7);
 }
-
 /*---------*/
