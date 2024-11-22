@@ -63,6 +63,11 @@ function janela() {  //preciso melhorar isso, pq ta uma gambiarra do krl
 
 }
 
-function btn_rodape(){
-    $('.btnr').toggle('medio')
+function btn_rodape(e){
+
+    switch(e){
+        case '1': $('.ul1').toggle('medio')
+                  $('#btn-1').animate({'rotate': '180deg'}, 'medio')                
+
+    }
 }
