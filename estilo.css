@@ -134,8 +134,19 @@ li{
     color: black;    
 }
 
+#btn-1, #btn-2, #btn-3, #btn-4{
+    display: none;
+}
 
+@media(max-width: 575px) {
+    #btn-1, #btn-2, #btn-3, #btn-4{
+        display: block;
+    }
 
+    .rdp1 .rdp-m{
+       margin: 3% 0px 3% 0px;
+    }
+}
 /*--Rodapé--2*/
 
 .rdp2 a{
