@@ -46,18 +46,12 @@ li{
     color: green;
 }
 
-
-.mobile-menu {
+#botao-menu-responsivo{
     display: none;
-    cursor: pointer;
 }
-  
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: black;
-    margin: 8px;
-    transition: 0.3s;
+
+.menu-mobile{
+    display: none;
 }
 
 @media(max-width: 999px) {
@@ -66,29 +60,23 @@ li{
         padding: 0px;
         overflow-x: hidden;
     }
-    
-    .navbar-nav {
-        position: absolute;
-        top: 0vh;
-        left: 0vh;
-        width: 50vh;
-        height: 100vh;
+
+    #botao-menu-responsivo{
+        display: inline;
+    }
+
+    .navbar-nav{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: inline;
+        position: fixed;
+        z-index: 15;
+        width: 60%;
+        height: 100%;
         background: white;
-        transition: 1.5s;
-        transform: translatex(-1000%);
-    }
-
-    .navbar-nav {
-        margin-left: 0px;
-        opacity: 0px;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .navbar-nav.active {
-        transform: translateX(0%);
+        margin-left: -500px;
     }
 
 }
