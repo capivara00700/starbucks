@@ -46,12 +46,28 @@ li{
     color: green;
 }
 
-#botao-menu-responsivo{
+.menu-mobile{
     display: none;
 }
 
-.menu-mobile{
+.hamburguer{
+    border: none;
+    background: none;
+    border-top: 3px solid black;
+    cursor: pointer;
     display: none;
+}
+
+.hamburguer::before,
+.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 }
 
 @media(max-width: 999px) {
@@ -61,8 +77,12 @@ li{
         overflow-x: hidden;
     }
 
-    #botao-menu-responsivo{
-        display: inline;
+    .hamburguer{
+        display: block;
+        z-index: 2;
+        position: fixed;
+        top: 26px;
+        right: 16px;
     }
 
     .navbar-nav{
@@ -76,7 +96,23 @@ li{
         width: 60%;
         height: 110%;
         background: white;
-        margin-left: -1000px;
+        margin-left: -2000px;
+    }
+
+    .nav.active .hamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
 
 }
