@@ -3,7 +3,7 @@ $('#botao-menu-responsivo').on('click', () => {
         $('.menu-mobile').animate({'margin-left': '-0px'}, 'medio')
         $('.menu-mobile').removeClass('aberto')
     } else {
-        $('.menu-mobile').animate({'margin-left': '-500px'}, 'medio')
+        $('.menu-mobile').animate({'margin-left': '-1000px'}, 'medio')
         $('.menu-mobile').addClass('aberto')
     }
 })
