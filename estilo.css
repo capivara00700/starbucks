@@ -80,9 +80,9 @@ li{
     .hamburguer{
         display: block;
         z-index: 2;
-        position: fixed;
         top: 26px;
         right: 16px;
+        margin-right: 5%;
     }
 
     .navbar-nav{
@@ -100,7 +100,6 @@ li{
     }
 
     .nav.active .hamburguer{
-        position: fixed;
         top: 26px;
         right: 16px;
         border-top-color: transparent;
@@ -202,3 +201,31 @@ li{
     color: rgba(51, 67, 61, 0.7);
 }
 /*---------*/
+
+.pg2-box{
+    height: 75%;
+    width: 50%;
+}
+
+.pg-2-menu-btn{
+    text-decoration: none;
+    color: rgb(0, 99, 65);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.pg-2-txt-menu{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.7em;
+}
+
+.pg2-link{
+    width: 49%;
+    display: inline-block;
+}
+
+.pg2-link a{
+    text-decoration: none;
+    color: rgb(0, 99, 65);
+}
