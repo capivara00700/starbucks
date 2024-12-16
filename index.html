@@ -23,13 +23,13 @@
     <script src="https://kit.fontawesome.com/20f92d3b80.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="testes" onresize="janela()">
+<body onresize="menu()">
     
     <!--Concertar a visualização pelo cell-->
 
 
     <div class="menu-mobile position-fixed aberto">
-        <div>oi</div>
+        <div><a href="menu.html">menu</a></div>
         <div>ola</div>
     </div>
 
@@ -38,7 +38,7 @@
     <a href="index.html" class="navbar-brand" style="margin-left: 3%;"><img src="imagens/logo.png" width="50px"></a>
 
     <ul class="navbar-nav links-nav"> 
-        <li class="nav-item"><a href="#" class="nav-link">menu</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">menu</a></li>
         <li class="nav-item"><a href="#" class="nav-link">nosso café</a></li>
         <li class="nav-item"><a href="#" class="nav-link">impacto social</a></li>
     </ul>
@@ -155,11 +155,11 @@
                     <span>Sobre nós</span>
                 </div>
                 <div class="col-1 justify-content-end">
-                    <button type="button" onclick="btn_rodape('1')" style="border: none;" id="btn-1"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
+                    <button type="button" style="border: none;" value="ola" id="btn-1"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
                 </div>
             </div>
 
-            <ul class="mt-3 btnr ul1">
+            <ul class="mt-3 btnr ul1 d-none">
                 <li><a href="#">Nossa empresa</a></li>
                 <li><a href="#">Nosso café</a></li>
                 <li><a href="#">Atendimento ao cliente</a></li>
@@ -175,7 +175,7 @@
                     <span>Carreira</span>
                 </div>
                 <div class="col-1 justify-content-end">
-                    <button type="button" onclick="btn_rodape('2')" style="border: none;" id="btn-2"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
+                    <button type="button" style="border: none;" id="btn-2"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
                 </div>
             </div>
 
@@ -191,7 +191,7 @@
                     <span>Impacto social</span>
                 </div>
                 <div class="col-1 justify-content-end">
-                    <button type="button" onclick="btn_rodape('3')" style="border: none;" id="btn-3"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
+                    <button type="button" style="border: none;" id="btn-3"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
                 </div>
             </div>
 
@@ -209,7 +209,7 @@
                     <span>Starbucks rewards</span>
                 </div>
                 <div class="col-1 justify-content-end">
-                    <button type="button" onclick="btn_rodape('4')" style="border: none;" id="btn-4"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
+                    <button type="button" style="border: none;" id="btn-4"><i class="fa-solid fa-chevron-up fa-lg"></i></button>
                 </div>
             </div>
 
