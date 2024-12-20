@@ -15,14 +15,7 @@ function menu() {
         $(janela).addClass('flex-column-reverse')
 
         //rodapé
-        $(ul).addClass('d-none')
-
-        let btn = $('.rdp1').find('button')
-
-        $(btn).on('click', e => {
-            console.log($(e.target()).parent())
-        })
-
+        $(ul).hide()
 
     } else if(tamanho => 576){
         //menu
@@ -30,14 +23,21 @@ function menu() {
         $('.row').find('.div1').addClass('col-7')
         $('.row').find('.div2').addClass('col-5')
 
-      //index janelas
-      $(janela).removeClass('flex-column-reverse')        
+        //index janelas
+        $(janela).removeClass('flex-column-reverse')        
 
         //rodapé
-        $(ul).removeClass('d-none')
+        $(ul).show()
     }
 }
 
 $(document).ready(() => {
     menu()
+
+    //rodapé btn
+    let btn = $('.rdp1').find('button')
+    $(btn).on('click', e => {
+        let row = $(e.target).closest('.rdp-m')
+        $(row).find('ul').toggle('medio')
+    })
 })
