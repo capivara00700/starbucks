@@ -157,12 +157,12 @@ li{
     color: black;    
 }
 
-#btn-1, #btn-2, #btn-3, #btn-4{
+.col button{
     display: none;
 }
 
 @media(max-width: 575px) {
-    #btn-1, #btn-2, #btn-3, #btn-4{
+    .col button{
         display: block;
     }
 
