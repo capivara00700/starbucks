@@ -5,7 +5,7 @@ function menu() {
     let janela = $('section').find('.parametro')
     let ul = $('footer, .row').find('ul')
 
-    if(tamanho <= 576){
+    if(tamanho <= 768){
         //menu
         $(menu).addClass('col-sm')
         $(menu).removeClass('col-7')
@@ -17,7 +17,7 @@ function menu() {
         //rodapé
         $(ul).hide()
 
-    } else if(tamanho => 576){
+    } else if(tamanho => 768){
         //menu
         $(menu).removeClass('col-sm')
         $('.row').find('.div1').addClass('col-7')
@@ -39,5 +39,7 @@ $(document).ready(() => {
     $(btn).on('click', e => {
         let row = $(e.target).closest('.rdp-m')
         $(row).find('ul').toggle('medio')
+        $(e.target).toggleClass('fa-flip-vertical')
+        
     })
 })
