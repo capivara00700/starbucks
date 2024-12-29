@@ -70,7 +70,7 @@ li{
     transition: 0.3s;
 }
 
-@media(max-width: 999px) {
+@media(max-width: 768px) {
     body{ 
         margin: 0px;
         padding: 0px;
@@ -113,6 +113,8 @@ li{
         transform: rotate(-135deg);
         top: -7px;
     }
+
+
 
 }
 /*---------*/
@@ -161,7 +163,7 @@ li{
     display: none;
 }
 
-@media(max-width: 575px) {
+@media(max-width: 768px) {
     .col button{
         display: block;
     }
@@ -223,12 +225,12 @@ li{
     font-size: 0.7em;
 }
 
-.pg2-link{
-    width: 49%;
-    display: inline-block;
+.pg2-l{
+    width: 40%;
 }
 
 .pg2-link a{
     text-decoration: none;
     color: rgb(0, 99, 65);
+    font-size: 0.9em;
 }
